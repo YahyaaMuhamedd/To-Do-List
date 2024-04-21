@@ -4,7 +4,7 @@ import './index.css';
 
 function App() {
 
-  const [list, setlist] = useState(JSON.parse(localStorage.getItem('save')));
+  const [list, setlist] = useState(JSON.parse(localStorage.getItem('save')) ?? []);
   const inputref = useRef();
 
 
