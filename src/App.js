@@ -19,6 +19,10 @@ function App() {
 
   const additem = () => {
     const text = inputref.current.value;
+    if (text === '') {
+      return alert("خخخخخخخخخ انت هتسيبهالي فاضية ")
+
+    };
     const newitem = { completed: false, text };
 
     inputref.current.value = '';
@@ -65,7 +69,7 @@ function App() {
             <div className="row">
               <input type="text"
                 ref={inputref}
-                placeholder="add your tasks" required autoFocus />
+                placeholder="add your tasks" autoFocus />
               <button onClick={additem}>Add</button>
             </div>
             <ul id="list-container">
