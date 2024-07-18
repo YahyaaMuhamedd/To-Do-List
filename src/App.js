@@ -20,7 +20,7 @@ function App() {
   const additem = () => {
     const text = inputref.current.value;
     if (text === '') {
-      return alert("خخخخخخخخخ انت هتسيبهالي فاضية ")
+      return alert("!!!!! انت هتسيبهالي فاضية ")
 
     };
     const newitem = { completed: false, text };
